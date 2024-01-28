@@ -1,6 +1,6 @@
-#COMMIT 3.
+#COMMIT 4.
 
-A partir de aqui ya no voy a escribir tanto
 
 Notas
-1.- Se restructuro el proyecto.
+1.- Se agrego el programa 3.
+2.- Se agrego a utilidades el archivo Multiplicar.

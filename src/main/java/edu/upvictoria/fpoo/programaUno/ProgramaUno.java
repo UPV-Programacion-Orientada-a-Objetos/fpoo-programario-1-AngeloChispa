@@ -25,7 +25,7 @@ public class ProgramaUno {
         numeroDos = entrada.pedir();
 
         if(s.sumar(numero, numeroDos)%1 == 0){
-            System.out.println("Resultado: " + (int) s.sumar(numero, numeroDos));
+            System.out.println("Resultado: " + (long) s.sumar(numero, numeroDos));
         }else{
             System.out.println("Resultado: " + s.sumar(numero, numeroDos));
         }        

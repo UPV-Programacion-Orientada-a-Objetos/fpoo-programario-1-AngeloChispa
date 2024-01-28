@@ -13,6 +13,10 @@ public class ProgramaDos {
 
      public void programaDos() throws IOException{
 
+        System.out.println("=================================");
+        System.out.println("Programa 2: Promedio de un alumno");
+        System.out.println("=================================");
+
         double a = 0, b = 0, c = 0, d = 0;
 
         InputNumbers entrada = new InputNumbers();
