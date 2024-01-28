@@ -2,6 +2,7 @@ package edu.upvictoria.fpoo;
 
 import edu.upvictoria.fpoo.programaDos.ProgramaDos;
 import edu.upvictoria.fpoo.programaOcho.ProgramaOcho;
+import edu.upvictoria.fpoo.programaSeis.ProgramaSeis;
 import edu.upvictoria.fpoo.programaSiete.ProgramaSiete;
 import edu.upvictoria.fpoo.programaTres.ProgramaTres;
 import edu.upvictoria.fpoo.programaUno.ProgramaUno;
@@ -19,7 +20,7 @@ public class Main {
         ProgramaTres tres = new ProgramaTres();
         ProgramaCuatro cuatro = new ProgramaCuatro();
         ProgramaCinco cinco = new ProgramaCinco();
-        
+        ProgramaSeis seis = new ProgramaSeis();
         ProgramaSiete siete = new ProgramaSiete();
         ProgramaOcho ocho = new ProgramaOcho();
 
@@ -29,7 +30,7 @@ public class Main {
         System.out.println("3.- Area de un rectangulo");
         System.out.println("4.- Area de una circunferencia");
         System.out.println("5.- Area de un terreno");
-        System.out.println("6.- ");
+        System.out.println("6.- Area de la figura");
         System.out.println("7.- Convertir litros a galones.");
         System.out.println("8.- Distancia entre 2 puntos.");
 
@@ -59,6 +60,8 @@ public class Main {
                 System.out.println();
                 break;
             case 6:
+                seis.programaSeis();
+                System.out.println();
                 break;
             case 7: 
                 siete.programaSeis();
