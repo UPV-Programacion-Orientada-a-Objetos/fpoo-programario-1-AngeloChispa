@@ -1,6 +1,7 @@
 package edu.upvictoria.fpoo;
 
 import edu.upvictoria.fpoo.programaDos.ProgramaDos;
+import edu.upvictoria.fpoo.programaNueve.ProgramaNueve;
 import edu.upvictoria.fpoo.programaOcho.ProgramaOcho;
 import edu.upvictoria.fpoo.programaSeis.ProgramaSeis;
 import edu.upvictoria.fpoo.programaSiete.ProgramaSiete;
@@ -8,6 +9,8 @@ import edu.upvictoria.fpoo.programaTres.ProgramaTres;
 import edu.upvictoria.fpoo.programaUno.ProgramaUno;
 import edu.upvictoria.fpoo.programaCinco.ProgramaCinco;
 import edu.upvictoria.fpoo.programaCuatro.ProgramaCuatro;
+import edu.upvictoria.fpoo.programaDiez.ProgramaDiez;
+
 import java.io.IOException;
 
 public class Main {
@@ -23,6 +26,8 @@ public class Main {
         ProgramaSeis seis = new ProgramaSeis();
         ProgramaSiete siete = new ProgramaSiete();
         ProgramaOcho ocho = new ProgramaOcho();
+        ProgramaNueve nueve = new ProgramaNueve();
+        ProgramaDiez diez = new ProgramaDiez();
 
         System.out.println("Lista de programas\n\n");         
         System.out.println("1.- Suma de dos números");
@@ -33,6 +38,8 @@ public class Main {
         System.out.println("6.- Area de la figura");
         System.out.println("7.- Convertir litros a galones.");
         System.out.println("8.- Distancia entre 2 puntos.");
+        System.out.println("9.- Paga semanal.");
+        System.out.println("10.- Convertir metros a pulgadas.");
 
         System.out.print("\n\nIngrese la opcion seleccionada: ");
         respuesta = entrada.selecion(); 
@@ -71,6 +78,15 @@ public class Main {
                 ocho.programaOcho();
                 System.out.println();
                 break;
+            case 9:
+                nueve.programaNueve();
+                System.out.println();
+                break;
+            case 10:
+                diez.programaDiez();
+                System.out.println();
+                break;
+                
         }
 
     }
