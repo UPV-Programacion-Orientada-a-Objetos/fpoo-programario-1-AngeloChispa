@@ -1,9 +1,8 @@
-package edu.upvictoria.fpoo.programaTres;
-
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+package edu.upvictoria.fpoo.Utilidades.Geometria;
 
 import org.junit.Test;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;;
 
 public class PropiedadesRectanguloTest {
     @Test

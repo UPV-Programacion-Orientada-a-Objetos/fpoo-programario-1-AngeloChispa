@@ -1,8 +1,10 @@
 package edu.upvictoria.fpoo.programaTres;
 
+
 import java.io.IOException;
 import edu.upvictoria.fpoo.Utilidades.InputNumbers;
 import edu.upvictoria.fpoo.Utilidades.Multiplicacion;
+import edu.upvictoria.fpoo.Utilidades.Geometria.PropiedadesRectangulo;
 
 /**
  * ProgramaTres
@@ -24,6 +26,11 @@ public class ProgramaTres {
             System.out.println("Ingrese la altura: ");
             altura = Math.abs(entrada.pedir());
             bandera = obj.medidas(altura, base);
+            if(bandera){
+                System.out.println("============================================");
+                System.out.println("La altura y la base no pueden medir lo mismo");
+                System.out.println("============================================\n");
+            }
         }
 
         System.out.println("Area del rectangulo: "+ salida.multiplicar(altura, base));

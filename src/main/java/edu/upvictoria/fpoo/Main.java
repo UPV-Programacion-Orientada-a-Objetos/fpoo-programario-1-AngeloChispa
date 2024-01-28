@@ -3,6 +3,7 @@ package edu.upvictoria.fpoo;
 import edu.upvictoria.fpoo.programaDos.ProgramaDos;
 import edu.upvictoria.fpoo.programaTres.ProgramaTres;
 import edu.upvictoria.fpoo.programaUno.ProgramaUno;
+import edu.upvictoria.fpoo.programaCinco.ProgramaCinco;
 import edu.upvictoria.fpoo.programaCuatro.ProgramaCuatro;
 import java.io.IOException;
 
@@ -15,12 +16,14 @@ public class Main {
         ProgramaDos dos = new ProgramaDos();
         ProgramaTres tres = new ProgramaTres();
         ProgramaCuatro cuatro = new ProgramaCuatro();
+        ProgramaCinco cinco = new ProgramaCinco();
 
         System.out.println("Lista de programas\n\n");         
         System.out.println("1.- Suma de dos números");
         System.out.println("2.- Promedio de exámenes");
         System.out.println("3.- Area de un rectangulo");
         System.out.println("4.- Area de una circunferencia");
+        System.out.println("5.- Area de un terreno");
 
         System.out.println("\n\nIngrese la opcion seleccionada: ");
         respuesta = entrada.selecion(); 
@@ -41,6 +44,10 @@ public class Main {
                 break;
             case 4: 
                 cuatro.programaCuatro();
+                System.out.println();
+                break;
+            case 5: 
+                cinco.programaCinco();
                 System.out.println();
                 break;
 
