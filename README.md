@@ -1,3 +1,6 @@
-#COMMIT 6.
+#COMMIT 7.
 
-Ya no se que poner.
+Notas:
+
+1.- Me salte le programa Seis para hacerlo despues.
+2.- Se agrego el programa Siete.

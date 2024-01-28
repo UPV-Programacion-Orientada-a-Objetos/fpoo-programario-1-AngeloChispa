@@ -13,6 +13,10 @@ public class ProgramaCinco {
 
     public void programaCinco() throws IOException{
 
+        System.out.println("=================================");
+        System.out.println("Programa 5: El area de un terreno");
+        System.out.println("=================================\n");
+
         double a = 0,  b = 0;
         boolean bandera = true;
 
@@ -33,8 +37,13 @@ public class ProgramaCinco {
                 System.out.println("===================================================\n");
             }
         }
-        
-        System.out.println("El area del terreno es: " + producto.multiplicar(a, b) + (producto.multiplicar(a, b)/2));
+
+
+        if((producto.multiplicar(a, b) + (producto.multiplicar(a, b)/2))%1 == 0){
+            System.out.println("El area del terreno es: " + (long) (producto.multiplicar(a, b) + (producto.multiplicar(a, b)/2)));
+        }else{
+            System.out.println("El area del terreno es: " + (producto.multiplicar(a, b) + (producto.multiplicar(a, b)/2)));
+        }
 
     }
 

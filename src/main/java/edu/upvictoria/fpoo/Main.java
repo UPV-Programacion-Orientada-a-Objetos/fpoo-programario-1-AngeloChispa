@@ -1,6 +1,7 @@
 package edu.upvictoria.fpoo;
 
 import edu.upvictoria.fpoo.programaDos.ProgramaDos;
+import edu.upvictoria.fpoo.programaSiete.ProgramaSiete;
 import edu.upvictoria.fpoo.programaTres.ProgramaTres;
 import edu.upvictoria.fpoo.programaUno.ProgramaUno;
 import edu.upvictoria.fpoo.programaCinco.ProgramaCinco;
@@ -17,6 +18,8 @@ public class Main {
         ProgramaTres tres = new ProgramaTres();
         ProgramaCuatro cuatro = new ProgramaCuatro();
         ProgramaCinco cinco = new ProgramaCinco();
+        
+        ProgramaSiete siete = new ProgramaSiete();
 
         System.out.println("Lista de programas\n\n");         
         System.out.println("1.- Suma de dos números");
@@ -24,8 +27,10 @@ public class Main {
         System.out.println("3.- Area de un rectangulo");
         System.out.println("4.- Area de una circunferencia");
         System.out.println("5.- Area de un terreno");
+        System.out.println("6.- ");
+        System.out.println("7.- Convertir litros a galones.");
 
-        System.out.println("\n\nIngrese la opcion seleccionada: ");
+        System.out.print("\n\nIngrese la opcion seleccionada: ");
         respuesta = entrada.selecion(); 
         
         switch (respuesta) {
@@ -50,7 +55,12 @@ public class Main {
                 cinco.programaCinco();
                 System.out.println();
                 break;
-
+            case 6:
+                break;
+            case 7: 
+                siete.programaSeis();
+                System.out.println();
+                break;
         }
 
     }
