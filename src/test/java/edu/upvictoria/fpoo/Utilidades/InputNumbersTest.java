@@ -1,4 +1,4 @@
-package edu.upvictoria.fpoo.programaUno;
+package edu.upvictoria.fpoo.Utilidades;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,11 +6,12 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-public class InputTest {
+
+public class InputNumbersTest {
     @Test
     public void pedirEntero() throws IOException{
 
-        Input obj = new Input();
+        InputNumbers obj = new InputNumbers();
         System.setIn(new java.io.ByteArrayInputStream("2\n".getBytes()));
 
         assertEquals(2, obj.pedir(), 0.00001);
@@ -20,7 +21,7 @@ public class InputTest {
     @Test
     public void pedirEnteroNegativo() throws IOException{
 
-        Input obj = new Input();
+        InputNumbers obj = new InputNumbers();
         System.setIn(new java.io.ByteArrayInputStream("-3\n".getBytes()));
 
         assertEquals(-3, obj.pedir(), 0.00001);
@@ -31,7 +32,7 @@ public class InputTest {
     public void pedirDouble() throws IOException{
 
         System.setIn(new java.io.ByteArrayInputStream("4.1345\n".getBytes()));
-        Input obj = new Input();
+        InputNumbers obj = new InputNumbers();
 
         assertEquals(4.1345, obj.pedir(), 0.00001);
 
@@ -41,10 +42,9 @@ public class InputTest {
     public void pedirDoubleNegativo() throws IOException{
 
         System.setIn(new java.io.ByteArrayInputStream("-4.1345\n".getBytes()));
-        Input obj = new Input();
+        InputNumbers obj = new InputNumbers();
 
         assertEquals(-4.1345, obj.pedir(), 0.00001);
 
     }
-
 }

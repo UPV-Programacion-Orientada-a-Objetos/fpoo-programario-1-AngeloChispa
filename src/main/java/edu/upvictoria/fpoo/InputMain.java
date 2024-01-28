@@ -7,10 +7,11 @@ import java.io.InputStreamReader;
 /**
  * Input
  */
-public class Input {
+public class InputMain{
 
-    public int selecion(int a){
+    public int selecion(){
 
+        double a = 0; 
         boolean bandera = true;
 
         BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
@@ -18,7 +19,7 @@ public class Input {
         while (bandera) {
             try{
                 bandera = false;
-                a = Integer.parseInt(leer.readLine());
+                a = Double.parseDouble(leer.readLine());
             }catch( IOException | NumberFormatException e){
                 bandera = true;
                 System.out.println("Opción invalida");
@@ -27,6 +28,6 @@ public class Input {
             }
         }
 
-        return a;
+        return Math.abs((int) a);
     }
 }

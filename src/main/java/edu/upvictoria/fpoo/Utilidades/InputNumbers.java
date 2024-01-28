@@ -1,4 +1,4 @@
-package edu.upvictoria.fpoo.programaUno;
+package edu.upvictoria.fpoo.Utilidades;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 /**
  * Input
  */
-public class Input {
+public class InputNumbers{
 
     public double pedir() throws IOException{
 
@@ -16,15 +16,17 @@ public class Input {
 
         BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
         
-        while(bandera){
+        while (bandera) {
             try{
                 bandera = false;
                 a = Double.parseDouble(leer.readLine());
             }catch(NumberFormatException e){
                 bandera = true;
-                System.out.println("Solo se aceptan valores númericos.");
-                System.out.println("Porfavor ingrese otro número: ");
-            }
+                System.out.println("=======================");
+                System.out.println("Solo se aceptan números");
+                System.out.println("=======================");
+                System.out.println("Ingrese un número valido: ");
+            }   
         }
         return a;   
     }
