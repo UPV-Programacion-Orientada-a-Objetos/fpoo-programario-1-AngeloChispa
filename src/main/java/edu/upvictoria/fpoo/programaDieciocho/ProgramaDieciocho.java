@@ -29,7 +29,11 @@ public class ProgramaDieciocho {
         obj = new BigDecimal(resultado.multiplicar(a, b));
         obj = obj.setScale(2, RoundingMode.DOWN);
 
-        System.out.println("Precio a pagar: " + obj.doubleValue());
+        if (obj.doubleValue()%1 == 0){
+            System.out.println("Precio a pagar: " + ((long)obj.doubleValue()));
+        }else{
+            System.out.println("Precio a pagar: " + obj.doubleValue());
+        }
 
     }
 

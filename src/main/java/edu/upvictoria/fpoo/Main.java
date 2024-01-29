@@ -13,7 +13,9 @@ import edu.upvictoria.fpoo.programaUno.ProgramaUno;
 import edu.upvictoria.fpoo.programaCatorce.ProgramaCatorce;
 import edu.upvictoria.fpoo.programaCinco.ProgramaCinco;
 import edu.upvictoria.fpoo.programaCuatro.ProgramaCuatro;
+import edu.upvictoria.fpoo.programaDieciocho.ProgramaDieciocho;
 import edu.upvictoria.fpoo.programaDieciseis.ProgramaDieciseis;
+import edu.upvictoria.fpoo.programaDiecisiete.ProgramaDiecisiete;
 import edu.upvictoria.fpoo.programaDiez.ProgramaDiez;
 import edu.upvictoria.fpoo.programaDoce.ProgramaDoce;
 
@@ -40,6 +42,7 @@ public class Main {
         ProgramaCatorce catorce = new ProgramaCatorce();
         ProgramaQuince quince = new ProgramaQuince();
         ProgramaDieciseis dieciseis = new ProgramaDieciseis();
+        ProgramaDiecisiete diecisiete = new ProgramaDiecisiete();
 
         System.out.println("Lista de programas\n\n");         
         System.out.println("1.- Suma de dos números");
@@ -58,6 +61,8 @@ public class Main {
         System.out.println("14.- Determinar edad.");
         System.out.println("15.- Precio estacionamiento.");
         System.out.println("16.- La brocha gorda.");
+        System.out.println("17.- Sacar Hipotenusa.");
+        System.out.println("18.- Precio por kilometro.");
 
         System.out.print("\n\nIngrese la opcion seleccionada: ");
         respuesta = entrada.selecion(); 
@@ -127,7 +132,14 @@ public class Main {
             case 16: 
                 dieciseis.programaDieciseis();
                 System.out.println();
-                break;           
+                break;    
+            case 17: 
+                diecisiete.programaDiecisiete();
+                System.out.println();
+                break;
+            case 18:
+                ProgramaDieciocho dieciocho = new ProgramaDieciocho();
+                       
         }
 
     }
