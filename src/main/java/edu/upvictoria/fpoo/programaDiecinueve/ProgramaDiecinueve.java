@@ -1,8 +1,6 @@
 package edu.upvictoria.fpoo.programaDiecinueve;
 
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 import edu.upvictoria.fpoo.Utilidades.Division;
 import edu.upvictoria.fpoo.Utilidades.InputNumbers;

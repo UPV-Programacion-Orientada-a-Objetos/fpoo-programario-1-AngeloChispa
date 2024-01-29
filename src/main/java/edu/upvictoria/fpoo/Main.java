@@ -10,9 +10,12 @@ import edu.upvictoria.fpoo.programaSiete.ProgramaSiete;
 import edu.upvictoria.fpoo.programaTrece.ProgramaTrece;
 import edu.upvictoria.fpoo.programaTres.ProgramaTres;
 import edu.upvictoria.fpoo.programaUno.ProgramaUno;
+import edu.upvictoria.fpoo.programaVeinte.ProgramaVeinte;
+import edu.upvictoria.fpoo.programaVeintiuno.ProgramaVeintiuno;
 import edu.upvictoria.fpoo.programaCatorce.ProgramaCatorce;
 import edu.upvictoria.fpoo.programaCinco.ProgramaCinco;
 import edu.upvictoria.fpoo.programaCuatro.ProgramaCuatro;
+import edu.upvictoria.fpoo.programaDiecinueve.ProgramaDiecinueve;
 import edu.upvictoria.fpoo.programaDieciocho.ProgramaDieciocho;
 import edu.upvictoria.fpoo.programaDieciseis.ProgramaDieciseis;
 import edu.upvictoria.fpoo.programaDiecisiete.ProgramaDiecisiete;
@@ -63,6 +66,9 @@ public class Main {
         System.out.println("16.- La brocha gorda.");
         System.out.println("17.- Sacar Hipotenusa.");
         System.out.println("18.- Precio por kilometro.");
+        System.out.println("19.- Distancia recorrida en vici.");
+        System.out.println("20.- Precio por llamada");
+        System.out.println("21.- CONAGUA 2");
 
         System.out.print("\n\nIngrese la opcion seleccionada: ");
         respuesta = entrada.selecion(); 
@@ -138,8 +144,13 @@ public class Main {
                 System.out.println();
                 break;
             case 18:
-                ProgramaDieciocho dieciocho = new ProgramaDieciocho();
-                       
+                new ProgramaDieciocho();
+            case 19: 
+                new ProgramaDiecinueve();
+            case 20:
+                new ProgramaVeinte();
+            case 21:
+                new ProgramaVeintiuno();   
         }
 
     }

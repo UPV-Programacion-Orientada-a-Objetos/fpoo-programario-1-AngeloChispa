@@ -1,3 +1,4 @@
-#COMMIT 20.
+#COMMIT 21.
 
-Ya no se va a actualizar esto, almenos que pase algo más relevante que crear un programa más.
+Nota:
+Despues de mucho paso algo que vale la pena mencionar, para no crear más ojetos mejor comenze a programar llamadas a objetos anonimos.
