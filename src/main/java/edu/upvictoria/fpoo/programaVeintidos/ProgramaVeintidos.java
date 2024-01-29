@@ -1,4 +1,4 @@
-package edu.upvictoria.fpoo.programaVeintiuno;
+package edu.upvictoria.fpoo.programaVeintidos;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -8,11 +8,11 @@ import edu.upvictoria.fpoo.Utilidades.InputNumbers;
 import edu.upvictoria.fpoo.Utilidades.Multiplicacion;
 
 /**
- * ProgramaVeintiuno
+ * ProgramaVeintidos
  */
-public class ProgramaVeintiuno {
+public class ProgramaVeintidos {
 
-    public ProgramaVeintiuno() throws IOException{
+    public ProgramaVeintidos()throws IOException{
 
         double a = 0, b = 0;
 
@@ -20,20 +20,18 @@ public class ProgramaVeintiuno {
         Multiplicacion resultado = new Multiplicacion();
         BigDecimal obj;
 
-        System.out.println("Ingrese costo del metro cubico de agua: ");
+        System.out.println("Ingrese costo de electricidad por KW: ");
         a = Math.abs(entrada.pedir());
         
-        System.out.println("Ingresa la cantidad de metros cubicos: ");
+        System.out.println("Ingresa la cantidad de KW consumidos: ");
         b = Math.abs(entrada.pedir());
 
         obj = new BigDecimal(resultado.multiplicar(a, b));
         obj = obj.setScale(2, RoundingMode.DOWN);
 
-        if (obj.doubleValue()%1 == 0){
-            System.out.println("Precio a pagar: $" + ((long)obj.doubleValue()));
-        }else{
-            System.out.println("Precio a pagar: $" + obj.doubleValue());
-        }
+        System.out.println("Precio a pagar: $" + obj.doubleValue());
+
     }
+
 
 }
