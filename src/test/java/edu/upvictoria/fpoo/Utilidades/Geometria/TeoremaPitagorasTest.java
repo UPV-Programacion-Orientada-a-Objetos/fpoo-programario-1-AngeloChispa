@@ -53,5 +53,31 @@ public class TeoremaPitagorasTest {
         assertEquals(12, obj.CatetoHipotenusa(cateto, hipotenusa), 0.0001);
 
     }
+
+    /**
+     * Este metodo no puede resivir números negativos
+     */
+
+    @Test
+    public void testCatetosEnteros(){
+
+        double a = 3, b = 5;
+
+        TeoremaPitagoras obj = new TeoremaPitagoras();
+
+        assertEquals(5.8309, obj.dosCatetos(a, b), 0.0001);
+
+    }
+
+    @Test
+    public void testCatetosDecimales(){
+
+        double a = 3.8, b = 5.34;
+
+        TeoremaPitagoras obj = new TeoremaPitagoras();
+
+        assertEquals(6.5540, obj.dosCatetos(a, b), 0.0001);
+
+    }
     
 }

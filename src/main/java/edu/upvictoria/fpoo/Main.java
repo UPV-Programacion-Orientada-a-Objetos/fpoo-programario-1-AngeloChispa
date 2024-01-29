@@ -13,6 +13,7 @@ import edu.upvictoria.fpoo.programaUno.ProgramaUno;
 import edu.upvictoria.fpoo.programaCatorce.ProgramaCatorce;
 import edu.upvictoria.fpoo.programaCinco.ProgramaCinco;
 import edu.upvictoria.fpoo.programaCuatro.ProgramaCuatro;
+import edu.upvictoria.fpoo.programaDieciseis.ProgramaDieciseis;
 import edu.upvictoria.fpoo.programaDiez.ProgramaDiez;
 import edu.upvictoria.fpoo.programaDoce.ProgramaDoce;
 
@@ -38,6 +39,7 @@ public class Main {
         ProgramaTrece trece = new ProgramaTrece();
         ProgramaCatorce catorce = new ProgramaCatorce();
         ProgramaQuince quince = new ProgramaQuince();
+        ProgramaDieciseis dieciseis = new ProgramaDieciseis();
 
         System.out.println("Lista de programas\n\n");         
         System.out.println("1.- Suma de dos números");
@@ -55,7 +57,7 @@ public class Main {
         System.out.println("13.- Convertir dolares a pesos");
         System.out.println("14.- Determinar edad.");
         System.out.println("15.- Precio estacionamiento.");
-        System.out.println("");
+        System.out.println("16.- La brocha gorda.");
 
         System.out.print("\n\nIngrese la opcion seleccionada: ");
         respuesta = entrada.selecion(); 
@@ -121,7 +123,11 @@ public class Main {
             case 15:
                 quince.programaQuince();
                 System.out.println();
-                break;               
+                break;    
+            case 16: 
+                dieciseis.programaDieciseis();
+                System.out.println();
+                break;           
         }
 
     }

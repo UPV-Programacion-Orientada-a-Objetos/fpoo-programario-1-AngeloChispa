@@ -13,5 +13,15 @@ public class TeoremaPitagoras {
             return resultado;
         }
 
+        public double dosCatetos(double a, double b){
+
+            double resultado = (a*a) + (b*b);
+
+            resultado = Math.sqrt(resultado);
+
+            return resultado;
+
+        }
+
 
 }
