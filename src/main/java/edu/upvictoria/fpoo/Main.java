@@ -12,7 +12,6 @@ import edu.upvictoria.fpoo.programaTres.ProgramaTres;
 import edu.upvictoria.fpoo.programaUno.ProgramaUno;
 import edu.upvictoria.fpoo.programaVeinte.ProgramaVeinte;
 import edu.upvictoria.fpoo.programaVeinticinco.ProgramaVeinticinco;
-import edu.upvictoria.fpoo.programaVeinticuatro.Ahorrar;
 import edu.upvictoria.fpoo.programaVeintidos.ProgramaVeintidos;
 import edu.upvictoria.fpoo.programaVeintiseis.ProgramaVeintiseis;
 import edu.upvictoria.fpoo.programaVeintitres.ProgramaVeintitres;

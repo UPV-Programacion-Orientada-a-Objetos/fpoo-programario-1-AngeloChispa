@@ -30,10 +30,11 @@ public class ProgramaVeinte {
         obj = obj.setScale(2, RoundingMode.DOWN);
 
         if (obj.doubleValue()%1 == 0){
-            System.out.println("Precio a pagar: " + ((long)obj.doubleValue()));
+            System.out.println("Precio a pagar: $" + ((long)obj.doubleValue()));
         }else{
-            System.out.println("Precio a pagar: " + obj.doubleValue());
+            System.out.println("Precio a pagar: $" + obj.doubleValue());
         }
+        System.out.println();
     }
 
 

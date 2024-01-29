@@ -13,6 +13,10 @@ public class ProgramaTres {
 
     public void programaTres() throws IOException{
 
+        System.out.println("\n=================================");
+        System.out.println("Programa 3: Area de un rectangulo");
+        System.out.println("=================================\n");
+
         double base = 0, altura = 0;
         boolean bandera = true;
 

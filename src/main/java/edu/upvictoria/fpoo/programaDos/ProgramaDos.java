@@ -13,9 +13,9 @@ public class ProgramaDos {
 
      public void programaDos() throws IOException{
 
-        System.out.println("=================================");
+        System.out.println("\n=================================");
         System.out.println("Programa 2: Promedio de un alumno");
-        System.out.println("=================================");
+        System.out.println("=================================\n");
 
         double a = 0, b = 0, c = 0, d = 0;
 

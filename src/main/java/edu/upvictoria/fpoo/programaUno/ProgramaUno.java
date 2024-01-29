@@ -10,9 +10,9 @@ import edu.upvictoria.fpoo.Utilidades.InputNumbers;
 public class ProgramaUno {
 
     public void  programaUno() throws IOException {
-        System.out.println("===============================");
+        System.out.println("\n===============================");
         System.out.println("Programa 1: Suma de dos números");
-        System.out.println("===============================");
+        System.out.println("===============================\n");
 
         double numero = 0, numeroDos = 0;
         Suma s = new Suma();
