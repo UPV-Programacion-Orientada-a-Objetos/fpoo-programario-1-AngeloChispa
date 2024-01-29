@@ -9,7 +9,7 @@ import edu.upvictoria.fpoo.Utilidades.InputNumbers;
  */
 public class ProgramaQuince {
 
-    public void programaCatorce() throws IOException{
+    public void programaQuince() throws IOException{
 
         double precio = 0, horas = 0;
         InputNumbers entrada = new InputNumbers();
